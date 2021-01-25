@@ -32,7 +32,7 @@ $(document).ready(function () {
 		var liurl = _this.data("url");
 		$(".notebook").html();
 		$.ajax({
-			type: 'post', //HTTP 요청 방식
+			type: 'get', //HTTP 요청 방식
 			url: liurl, //해당 url
 			dataType: 'html', //data 타입
 			success: function (data) { //HTTP 요청 성공 후 데이터 전송
